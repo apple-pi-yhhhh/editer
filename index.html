@@ -5,13 +5,15 @@
   <link rel="stylesheet" href="lib/codemirror.css">
   <script src="lib/codemirror.js"></script>
   <link rel="stylesheet" href="theme/monokai.css">
+  <script src="mode/javascript/javascript.js"></script>
 </head>
 <body>
   <script>
     var editor = CodeMirror(document.body, {
       value: 'console.log("Hello World")\n',
       lineNumbers: true,
-      theme: 'monokai'  // <- テーマの名前
+      theme: 'monokai',
+      mode: 'javascript'  // 言語名
     });
   </script>
 </body>

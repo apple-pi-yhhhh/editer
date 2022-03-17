@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="lib/codemirror.css">
+  <script src="lib/codemirror.js"></script>
+  <link rel="stylesheet" href="theme/monokai.css">
+</head>
+<body>
+  <script>
+    var editor = CodeMirror(document.body, {
+      value: 'console.log("Hello World")\n',
+      lineNumbers: true,
+      theme: 'monokai'  // <- テーマの名前
+    });
+  </script>
+</body>
+</html>
